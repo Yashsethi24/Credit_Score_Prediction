@@ -1,64 +1,36 @@
-Project Title
+# CreditScore Classification: Categorizing customers' credit score into Good,Standard, or Bad 
 
-Table of Contents
+## Project Overview
+This project focuses on developing a machine learning model to predict an individual's credit score based on their financial history and personal information. Accurate credit score classification is vital for financial institutions to assess creditworthiness and make informed lending decisions.  In addition to building an ML model, we have also performed causal inference to determine the effect of certain parameters on credit scores. This analysis provides insights into which factors have a significant impact, helping customers understand how they can improve their creditworthiness.
 
-Introduction
+# Problem Statement
 
-Problem Statement
+Financial institutions need reliable methods to evaluate the credit risk associated with potential borrowers. Traditional credit scoring models may not fully capture the complexities of individual financial behaviors, leading to inaccurate assessments. This project aims to enhance credit score prediction accuracy by leveraging machine learning techniques on comprehensive datasets while also incorporating causal inference to identify key factors influencing credit scores.
 
-Objectives
+# Objectives
 
-Data Description
+### Data Pre-processing
+Clean data, remove anomalies and make data ready for the analysis. (Refer to notebook: Data_pre_process_Credit_score_classification.ipynb) 
 
-Methodology
+### Exploratory Data Analysis (EDA) and Feature Engineering
+Conduct an in-depth **EDA** to identify key financial and demographic features that significantly influence credit score classification. Use **feature engineering techniques** to enhance the model performance. (Refer to notebook: EDA_Credit_score_classification_v2.ipynb) 
 
-Results
+### Predictive modelling
+Develop state-of-the-art supervised learning models (such as **XGBoost, LightGBM, CatBoost, and other ensemble techniques**) capable of accurately classifying individuals into predefined credit score categories (e.g., 'Good', 'Standard', 'Poor'). Evaluate the model's performance using cross validation accuracy metrics and validate its generalizability on unseen data.
+## Stacking Model:
+Use **stacking ensemble approach** using different **meta-models** to enhance prediction accuracy. The base models used for stacking include:
+- **LightGBM**
+- **XGBoost**
+- **Random Forest**
 
-Conclusion
+Each stacking model was trained with **Logistic Regression**.
+(Refer to notebook: SupervisedLearning.ipynb) 
 
-Future Work
+### Unsupervised Learning Insights
+Utilize unsupervised learning techniques to cluster data and identify underlying patterns related to credit scores. (Refer to notebook: UnsupervisedLearning.ipynb) 
 
-Contributors
+### Causal Inference
+Conduct causal inference analysis to determine the causal impact of various factors on credit scores, offering actionable insights for customers to improve their creditworthiness.
+(Refer to notebook: Causal_Inference.ipynb)
 
-Acknowledgements
-
-Introduction
-
-Provide a brief overview of your project, explaining the context and significance of the problem you are addressing.
-
-Problem Statement
-
-Clearly define the problem your project aims to solve. Explain why this problem is important and who benefits from its solution.
-
-Objectives
-
-List the main goals of your project. These should be specific and measurable outcomes you aim to achieve.
-
-Data Description
-
-Describe the datasets used in the project, including sources, key variables, and any preprocessing steps taken.
-
-Methodology
-
-Detail the methods and techniques employed in your project. This could include data analysis, machine learning models, or any other relevant approaches.
-
-Results
-
-Summarize the key findings or outcomes of your project. Include visual aids like charts or graphs if applicable.
-
-Conclusion
-
-Discuss the implications of your results and how they address the problem statement.
-
-Future Work
-
-Outline potential improvements or next steps for the project.
-
-Contributors
-
-Acknowledge the individuals who contributed to the project, including their roles and affiliations.
-
-Acknowledgements
-
-Mention any organizations, datasets, or resources that were instrumental in the completion of your project.
-
+---
