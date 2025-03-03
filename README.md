@@ -17,7 +17,7 @@ Conduct an in-depth **EDA** to identify key financial and demographic features t
 
 ### Predictive modelling
 Develop state-of-the-art supervised learning models (such as **XGBoost, LightGBM, CatBoost, and other ensemble techniques**) capable of accurately classifying individuals into predefined credit score categories (e.g., 'Good', 'Standard', 'Poor'). Evaluate the model's performance using cross validation accuracy metrics and validate its generalizability on unseen data.
-## Stacking Model:
+Stacking Model:
 Use **stacking ensemble approach** using different **meta-models** to enhance prediction accuracy. The base models used for stacking include:
 - **LightGBM**
 - **XGBoost**
