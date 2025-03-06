@@ -1,13 +1,14 @@
 # CreditScore Classification: Categorizing customers' credit score into Good,Standard, or Bad 
 
 ## Project Overview
-This project focuses on developing a machine learning model to predict an individual's credit score based on their financial history and personal information. Accurate credit score classification is vital for financial institutions to assess creditworthiness and make informed lending decisions.  In addition to building an ML model, we have also performed causal inference to determine the effect of certain parameters on credit scores. This analysis provides insights into which factors have a significant impact, helping customers understand how they can improve their creditworthiness.
+This project focuses on developing a machine learning model to predict an individual's credit score based on their financial history and personal information. Accurate credit score classification is vital for financial institutions to assess creditworthiness and make informed lending decisions.  
+In addition to building an ML model, we have also performed causal inference to determine the effect of the user's payment behavior on credit scores. This analysis provides insights into which factors have a significant impact, helping customers understand how they can improve their creditworthiness.
 
 # Problem Statement
 
-Financial institutions need reliable methods to evaluate the credit risk associated with potential borrowers. Traditional credit scoring models may not fully capture the complexities of individual financial behaviors, leading to inaccurate assessments. This project aims to enhance credit score prediction accuracy by leveraging machine learning techniques on comprehensive datasets while also incorporating causal inference to identify key factors influencing credit scores.
+Financial institutions need reliable methods to evaluate the credit risk associated with potential borrowers. Traditional credit scoring models may not fully capture the complexities of individual financial behaviors or require a lot of manual work, leading to inaccurate assessments. This project aims to enhance credit score prediction accuracy by leveraging machine learning techniques on comprehensive datasets while also incorporating causal inference to identify key factors influencing credit scores.
 
-# Objectives
+# Modeling Process
 
 ### Data Pre-processing
 Clean data, remove anomalies and make data ready for the analysis. (Refer to notebook: Data_pre_process_Credit_score_classification.ipynb) 
@@ -30,7 +31,7 @@ Each stacking model was trained with **Logistic Regression**.
 Utilize unsupervised learning techniques to cluster data and identify underlying patterns related to credit scores. (Refer to notebook: UnsupervisedLearning.ipynb) 
 
 ### Causal Inference
-Conduct causal inference analysis to determine the causal impact of various factors on credit scores, offering actionable insights for customers to improve their creditworthiness.
+Conduct causal inference analysis to determine the causal impact of late payments on credit scores, offering actionable insights for customers to improve their creditworthiness.
 (Refer to notebook: Causal_Inference.ipynb)
 
 ---
